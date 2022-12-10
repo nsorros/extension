@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>Enter some text in the box below and press "Enter":</p>
+
+    <input type="text" id="text-input" onkeydown="if (event.keyCode == 13) myFunction()">
+
+    <script>
+        function myFunction() {
+            // Get the value of the text input field
+            var text = document.getElementById("text-input").value;
+
+            // Display the text in an alert box
+            alert(text);
+        }
+    </script>
+</body>
+</html>
+
