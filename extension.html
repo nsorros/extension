@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>My Website</title>
+    <script src="extension.js"></script>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
@@ -9,16 +10,6 @@
 
     <input type="text" id="text-input" onkeydown="if (event.keyCode == 13) callApi()">
     <p id="my-element"></p>
-    <script>
-        function callApi() {
-            fetch('http://localhost:8000/')
-                .then(response => response.json())
-                .then(data => {
-                    // Update the HTML of the page
-                    document.getElementById('my-element').innerHTML = data.message;
-            });
-        }
-    </script>
 </body>
 </html>
 
